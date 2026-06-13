@@ -13,5 +13,6 @@ jobs:
         run: echo "test phase"
   deploy:
     runs-on:
-      steps:
-      - name: echo "deploy the app" 
+    steps:
+      - name: deploy the app
+        run: echo "delopy to k8s
