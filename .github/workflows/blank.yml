@@ -12,7 +12,7 @@ jobs:
       - name: test
         run: echo "test phase"
   deploy:
-    runs-on:
+    runs-on: ubuntu-latest
     steps:
       - name: deploy the app
         run: echo "delopy to k8s
