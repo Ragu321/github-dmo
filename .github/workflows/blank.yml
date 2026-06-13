@@ -1,20 +1,9 @@
 name: hello
-on: workflow_dispatch
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: build
         run: echo "A demo build"
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: test
-        run: echo "test phase"
-  deploy:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - name: deploy the app
-        run: echo "delopy to k8s"
+
